@@ -3,6 +3,21 @@
 
 set -e
 
+echo "=================== Checking remote branch ======================"
+
+# master 브랜치에 push 하지 못하도록 막는다.
+FORBIDDEN_REF="refs/heads/master"
+ARR_GIT_STDIN=($(echo $HUSKY_GIT_STDIN))
+remote_ref=${ARR_GIT_STDIN[2]}
+
+echo "remote_ref: $1"
+
+if [ "$remote_ref" == "$FORBIDDEN_REF" ]
+then
+    echo "DO NOT PUSH it master"
+    exit 1
+fi
+
 echo "=================== Checking before pushing... ======================"
 
 # `| cat` 는 grep 으로 일치하는 내용이 없는 경우, 에러가 발생하여 본 스크립트가 종료되는 것을 막는다.
