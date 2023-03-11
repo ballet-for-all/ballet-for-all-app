@@ -1,0 +1,24 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+set -e
+
+echo "=================== Checking before pushing... ======================"
+
+# `| cat` 는 grep 으로 일치하는 내용이 없는 경우, 에러가 발생하여 본 스크립트가 종료되는 것을 막는다.
+# ref: https://stackoverflow.com/a/6550543
+eslint_diff_cmd='git diff --relative --name-only --diff-filter=ACMRTUXB origin/main...HEAD | grep -E "(.js$|.jsx$|.ts$|.tsx$|.json$)" | grep -v "experimental" | cat'
+
+yarn prettier-eslint --write $(eval $eslint_diff_cmd)
+changed_files=$(git diff --name-only --relative $(eval $eslint_diff_cmd))
+if [ -n "${changed_files}" ]; then
+  echo "Files have been reformatted. Please review changes and commit again using below command."
+  echo ""
+  echo "    git commit -a --amend --no-edit"
+  echo ""
+  echo "* Files updated:"
+  echo "${changed_files[@]}"
+  exit 1
+fi
+
+yarn eslint $(eval $eslint_diff_cmd)
