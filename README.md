@@ -16,9 +16,14 @@
 [nvm](https://github.com/nvm-sh/nvm)과 [direnv](https://direnv.net/)를 이용하여
 이 프로젝트에서 사용할 Node.js 버전을 자동으로 설정할 수 있습니다.
 
+mac에서 nvm 실행시 문제가 발생할 때는 아래 링크를 참조하세요.
+
+[troubleshooting-on-macos](https://github.com/nvm-sh/nvm#troubleshooting-on-macos)
+
 예시 `.envrc` 파일
 
 ```.envrc
+# nvm.sh 실행
 . "/usr/local/opt/nvm/nvm.sh"
 nvm use v18.14.2
 ```
