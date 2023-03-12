@@ -1,4 +1,5 @@
-name: preview
+name: PR update Expo
+
 on: pull_request
 
 jobs:
