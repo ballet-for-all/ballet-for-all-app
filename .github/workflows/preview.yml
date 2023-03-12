@@ -29,6 +29,7 @@ jobs:
         with:
           eas-version: latest
           expo-version: latest
+          packager: npm
           expo-packager: npm
           token: ${{ secrets.EXPO_TOKEN }}
 
