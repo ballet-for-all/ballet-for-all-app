@@ -1,7 +1,7 @@
 import React from "react";
 import {Text} from "react-native"
 import {NativeStackNavigationProp} from "@react-navigation/native-stack";
-import {StackParamList} from "../../App";
+import {StackParamList} from "../../../App";
 import {useSafeAreaInsets} from "react-native-safe-area-context";
 
 export type SignUpScreenProps = NativeStackNavigationProp<StackParamList, "SignUp">
