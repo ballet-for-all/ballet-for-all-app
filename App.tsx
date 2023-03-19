@@ -1,8 +1,8 @@
-import SignUpScreen from "./screens/SignUp/SignUpScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import {SafeAreaProvider} from "react-native-safe-area-context";
+import SignUpScreen from './src/screens/SignUp/SignUpScreen';
 
 export type StackParamList = {
   SignUp: undefined;
@@ -11,6 +11,7 @@ export type StackParamList = {
 const Stack = createNativeStackNavigator<StackParamList>();
 
 export default function App() {
+
   return (
     <SafeAreaProvider>
       <NavigationContainer>
