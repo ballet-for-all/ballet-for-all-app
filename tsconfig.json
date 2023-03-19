@@ -1,4 +1,15 @@
 {
-  "compilerOptions": {},
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "@components/*": ["components/*"],
+      "@containers/*": ["containers/*"],
+      "@modules/*": ["modules/*"],
+      "@scenes/*": ["scenes/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
   "extends": "expo/tsconfig.base"
 }
