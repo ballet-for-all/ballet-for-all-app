@@ -33,22 +33,18 @@ export const SignUpStyles = StyleSheet.create({
     backgroundColor: '#FDE500',
     width: 327,
     height: 56,
-    borderRadius: 4,
+    borderRadius: 8,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   appleBtn: {
     backgroundColor: 'white',
     width: 327,
     height: 56,
-    borderRadius: 4,
+    borderRadius: 8,
     marginTop: 12,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
-  kakaoLogo: {
-    width: 40,
-    height: 40,
-  }
 });
 
