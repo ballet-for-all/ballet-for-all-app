@@ -1,0 +1,31 @@
+root: true
+settings:
+  import/ignore:
+    - react-native
+overrides:
+- files:
+  - "*.ts"
+  - "*.tsx"
+  - "*.js"
+  - "*.jsx"
+  extends:
+  - standard
+- files:
+  - "*.ts"
+  extends:
+  - .eslintrc.ts.yaml
+- files:
+  - "*.tsx"
+  extends:
+  - .eslintrc.react.yaml
+- files:
+  - "*.js"
+  - "*.jsx"
+  extends:
+  - standard
+  rules: {}
+- files:
+  - "*.json"
+  extends:
+  - plugin:json/recommended
+  rules: {}

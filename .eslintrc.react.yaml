@@ -1,0 +1,49 @@
+env:
+  browser: true
+  jest: true
+plugins:
+- react-hooks
+extends:
+- plugin:react/recommended
+- plugin:import/react
+- ./.eslintrc.ts.yaml
+rules:
+  react/display-name: off
+  react/jsx-boolean-value: error
+  react/jsx-closing-bracket-location: error
+  react/jsx-closing-tag-location: error
+  react/jsx-curly-brace-presence:
+  - error
+  - props: never
+    children: never
+  react/jsx-curly-newline:
+  - error
+  - multiline: forbid
+    singleline: forbid
+  react/jsx-curly-spacing:
+  - error
+  - never
+  react/jsx-first-prop-new-line:
+  - error
+  - multiline
+  react/jsx-sort-props:
+  - error
+  - callbacksLast: true
+    shorthandFirst: true
+  react/jsx-tag-spacing: error
+  react/jsx-wrap-multilines:
+  - error
+  - declaration: parens-new-line
+    assignment: parens-new-line
+    return: parens-new-line
+    arrow: parens-new-line
+    condition: parens-new-line
+    logical: parens-new-line
+    prop: parens-new-line
+  react/prop-types: off
+  react/react-in-jsx-scope: off # @vitejs/plugin-react injects React automatically
+  react-hooks/exhaustive-deps: error
+  react-hooks/rules-of-hooks: error
+settings:
+  react:
+    version: detect

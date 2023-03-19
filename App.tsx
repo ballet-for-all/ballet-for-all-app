@@ -5,20 +5,19 @@ import {SafeAreaProvider} from "react-native-safe-area-context";
 import SignUpScreen from './src/screens/SignUp/SignUpScreen';
 
 export type StackParamList = {
-  SignUp: undefined;
+  SignUp: undefined
 }
 
-const Stack = createNativeStackNavigator<StackParamList>();
+const Stack = createNativeStackNavigator<StackParamList>()
 
-export default function App() {
-
+export default function App () {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="SignUp">
-          <Stack.Screen name="SignUp" component={SignUpScreen} options={{ headerShown: false }} />
+          <Stack.Screen component={SignUpScreen} name="SignUp" options={{ headerShown: false }} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
-  );
+  )
 }
