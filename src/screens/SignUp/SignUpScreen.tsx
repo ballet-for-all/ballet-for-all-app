@@ -10,6 +10,9 @@ import { TouchableOpacity, Button, Image, ImageBackground, StyleSheet, Text, Vie
 
 import Logo from '@/assets/icons/logotypes.svg';
 import bgImage from '@/assets/images/background-image.png';
+import LoginButton from '@/components/LoginButton/LoginButton';
+import { kakaoLogo } from '@/assets/icons/kakaoLogo.png';
+import { appleLogo } from '@/assets/icons/appleLogo.png';
 
 export type SignUpScreenProps = NativeStackNavigationProp<StackParamList, "SignUp">
 
@@ -42,6 +45,21 @@ export type SignUpScreenProps = NativeStackNavigationProp<StackParamList, "SignU
           당신을 위해
         </Text>
       </View>
+
+      {/* 로고 */}
+      <View style={SignUpStyles.logo}>
+
+      </View>
+
+      <View style={SignUpStyles.loginWrap}>
+        <LoginButton title="카카오 아이디로 로그인" buttonStyle={SignUpStyles.kakaoBtn} onPress={() => {navigation.navigate('TermsScreen')}}>
+          <Image source={kakaoLogo} style={SignUpStyles.kakaoLogo} />
+        </LoginButton>
+        <LoginButton title="Apple ID로 로그인" buttonStyle={SignUpStyles.appleBtn} onPress={() => {navigation.navigate('TermsScreen')}}>
+          <Image source={appleLogo} style={SignUpStyles.appleLogo} />
+        </LoginButton>
+      </View>
+      
     </View>
 
   )
