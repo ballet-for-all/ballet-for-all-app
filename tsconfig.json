@@ -11,7 +11,7 @@
       "@utils/*": ["utils/*"]
     }
   },
-  "extends": "expo/tsconfig.base"
+  "extends": "expo/tsconfig.base",
     "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
@@ -25,9 +25,8 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true
-  },
-  "include": ["src"],
-  "extends": "expo/tsconfig.base",
-  "references": [{ "path": "./tsconfig.node.json" }]
+    "noEmit": true,
+    "include": ["src"],
+    "extends": "expo/tsconfig.base",
+    "references": [{ "path": "./tsconfig.node.json" }]
 }
