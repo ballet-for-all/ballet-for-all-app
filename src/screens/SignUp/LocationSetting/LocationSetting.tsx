@@ -30,6 +30,14 @@ function LocationSetting() {
       </View>
     </View>
 
+    <View style={styles.siGoonGooDong}>
+        <ScrollView style={styles.si}>
+          <Text>테스트텍스트</Text>
+        </ScrollView>
+        <ScrollView style={styles.goonGo} />
+        <ScrollView style={styles.dong} />
+    </View>
+
      
     </View>
 
