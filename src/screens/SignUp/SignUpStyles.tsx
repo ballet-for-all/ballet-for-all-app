@@ -50,7 +50,7 @@ export const SignUpStyles = StyleSheet.create({
     position: 'absolute',
     left: '50%',
     top: '50%',
-    transform: [{translateY: -50}, {translateX: -50}],
+    transform: [{translateY: -50}, {translateX: -60}],
   }
 });
 
