@@ -8,11 +8,11 @@ import { useNavigation } from '@react-navigation/native';
 import {NativeStackNavigationProp} from "@react-navigation/native-stack";
 import { TouchableOpacity, Button, Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
 
-import Logo from '@/assets/icons/logotypes.svg';
 import bgImage from '@/assets/images/background-image.png';
 import LoginButton from '@/components/LoginButton/LoginButton';
 import kakaoLogo from '@/assets/icons/kakaoLogo.png';
 import appleLogo from '@/assets/icons/appleLogo.png';
+import Logotype from '@/assets/icons/Logotypes';
 
 export type SignUpScreenProps = NativeStackNavigationProp<StackParamList, "SignUp">
 
@@ -48,7 +48,7 @@ export type SignUpScreenProps = NativeStackNavigationProp<StackParamList, "SignU
 
       {/* 로고 */}
       <View style={SignUpStyles.logo}>
-
+        <Logotype width="100%" height="100%" />
       </View>
 
       <View style={SignUpStyles.loginWrap}>

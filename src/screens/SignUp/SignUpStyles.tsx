@@ -46,5 +46,11 @@ export const SignUpStyles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  logo: {
+    position: 'absolute',
+    left: '50%',
+    top: '50%',
+    transform: [{translateY: -50}, {translateX: -50}],
+  }
 });
 
