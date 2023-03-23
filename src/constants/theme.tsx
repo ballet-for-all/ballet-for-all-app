@@ -1,8 +1,3 @@
-import { Stylesheet, Dimensions } from "react-native";
-
-const deviceWidth = Dimensions.get('window').width;
-const deviceWidth = Dimensions.get('window').height;
-
 const theme = {
   colors: {
     primary: '#222222',
@@ -11,7 +6,7 @@ const theme = {
     quaternary: '#eeeeee',
     info: '#0066FF',
     white: '#ffffff',
-    light: '#f8f9fa',
+    light: '#f8f9fa'
   },
   spacing: {
     xs: 4,
@@ -20,15 +15,15 @@ const theme = {
     lg: 24,
     xl: 32,
     xxl: 48,
-    txl: 64,
+    txl: 64
   },
   fontSizes: {
     xs: '12px',
     sm: '14px',
     md: '16px',
     lg: '18px',
-    xl: '20px',
-  },
-};
+    xl: '20px'
+  }
+}
 
-export default theme;
+export default theme

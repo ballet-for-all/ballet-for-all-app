@@ -14,7 +14,7 @@ module.exports = {
           '.tsx',
           '.jsx',
           '.js',
-          '.json',
+          '.json'
         ],
         alias: {
           '@': './src',
@@ -23,8 +23,9 @@ module.exports = {
           '@modules': './src/modules',
           '@scenes': './src/scenes',
           '@utils': './src/utils',
-        },
-      },
-    ],
-  ],
-};
+          '@assets': './src/assets'
+        }
+      }
+    ]
+  ]
+}

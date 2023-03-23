@@ -1,8 +1,9 @@
-import { NavigationContainer } from "@react-navigation/native";
-import React from "react";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import {SafeAreaProvider} from "react-native-safe-area-context";
-import SignUpScreen from './src/screens/SignUp/SignUpScreen';
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import React from 'react'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
+
+import { SignUpScreen } from './src/screens/SignUp'
 
 export type StackParamList = {
   SignUp: undefined
