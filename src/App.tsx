@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import React from 'react'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 
-import { SignUpScreen } from './src/screens/SignUp'
+import { SignUpScreen } from './screens/SignUp'
 
 export type StackParamList = {
   SignUp: undefined
