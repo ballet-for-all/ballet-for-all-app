@@ -1,11 +1,8 @@
-/* eslint max-len: 0 */
 import React from 'react'
 import Svg, { Path, Defs, LinearGradient, Stop } from 'react-native-svg'
 
 function Logotype () {
   return (
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
     <Svg
       fill="none"
       height="101"

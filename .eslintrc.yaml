@@ -29,3 +29,5 @@ overrides:
   extends:
   - plugin:json/recommended
   rules: {}
+ignorePatterns:
+  - "**/assets/**/*.tsx"

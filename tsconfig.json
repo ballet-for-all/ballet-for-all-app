@@ -9,7 +9,8 @@
       "@scenes/*": ["scenes/*"],
       "@utils/*": ["utils/*"],
       "@assets/*": ["assets/*"]
-    }
+    },
+    "typeRoots": ["src/types"]
   },
   "target": "ESNext",
   "useDefineForClassFields": true,
