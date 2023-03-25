@@ -8,6 +8,7 @@ import { LoginButton } from './LoginButton'
 import { MainCopy } from './MainCopy'
 import { SignUpStyles } from './SignUpStyles'
 import { StackParamList } from '../../App'
+import Logotype from '../../assets/icons/Logotype'
 import appleLogo from '../../assets/icons/appleLogo.png'
 import kakaoLogo from '../../assets/icons/kakaoLogo.png'
 import bgImage from '../../assets/images/background-image.png'
@@ -35,9 +36,9 @@ export const SignUpScreen = (_props: SignUpScreenProps) => {
       <ImageBackground source={bgImage} style={SignUpStyles.image} />
       <MainCopy />
       {/* TODO(supermantoman): Logotype 고치기 */}
-      {/* <View style={SignUpStyles.logo}> */}
-      {/* <Logotype height="100%" width="100%" /> */}
-      {/* </View> */}
+      <View style={SignUpStyles.logo}>
+        <Logotype />
+      </View>
       <View style={SignUpStyles.loginWrap}>
         <LoginButton
           buttonStyle={SignUpStyles.kakaoBtn}
